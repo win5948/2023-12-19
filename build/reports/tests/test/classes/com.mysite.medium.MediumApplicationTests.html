@@ -1,0 +1,2248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - MediumApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>MediumApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.mysite.medium.html">com.mysite.medium</a> &gt; MediumApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.896s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testJpa()</td>
+<td class="success">0.896s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>21:21:28.448 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.mysite.medium.MediumApplicationTests]: MediumApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:21:28.554 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.mysite.medium.MediumApplication for test class com.mysite.medium.MediumApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.5)
+
+2023-12-18T21:21:28.875+09:00  INFO 9712 --- [    Test worker] c.mysite.medium.MediumApplicationTests   : Starting MediumApplicationTests using Java 21.0.1 with PID 9712 (started by 황크다 in C:\Users\황크다\Downloads\medium-main\medium-main)
+2023-12-18T21:21:28.876+09:00  INFO 9712 --- [    Test worker] c.mysite.medium.MediumApplicationTests   : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-12-18T21:21:29.640+09:00  INFO 9712 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-18T21:21:29.695+09:00  INFO 9712 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 3 JPA repository interfaces.
+2023-12-18T21:21:30.162+09:00  INFO 9712 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-18T21:21:30.247+09:00  INFO 9712 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-12-18T21:21:30.250+09:00  INFO 9712 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-12-18T21:21:30.545+09:00  INFO 9712 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-18T21:21:30.575+09:00  INFO 9712 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-18T21:21:30.771+09:00  INFO 9712 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/medium user=SA
+2023-12-18T21:21:30.772+09:00  INFO 9712 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-18T21:21:30.793+09:00  WARN 9712 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-18T21:21:31.594+09:00  INFO 9712 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-18T21:21:31.643+09:00  INFO 9712 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-18T21:21:31.994+09:00  INFO 9712 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-18T21:21:32.460+09:00  WARN 9712 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-18T21:21:32.589+09:00  INFO 9712 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@648ec9f4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@158119bf, org.springframework.security.web.context.SecurityContextHolderFilter@15d25244, org.springframework.security.web.header.HeaderWriterFilter@7002dacc, org.springframework.security.web.csrf.CsrfFilter@1a120e41, org.springframework.security.web.authentication.logout.LogoutFilter@13190355, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5ffae42f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2889d997, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e168d90, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69abff1d, org.springframework.security.web.access.ExceptionTranslationFilter@68c1d547, org.springframework.security.web.access.intercept.AuthorizationFilter@53251e03]
+2023-12-18T21:21:33.082+09:00  INFO 9712 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/medium'
+2023-12-18T21:21:33.136+09:00  INFO 9712 --- [    Test worker] c.mysite.medium.MediumApplicationTests   : Started MediumApplicationTests in 4.443 seconds (process running for 5.453)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+Hibernate: 
+    insert 
+    into
+        question
+        (author_id,content,create_date,is_published,modify_date,subject,id) 
+    values
+        (?,?,?,?,?,?,default)
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>WARNING: A Java agent has been loaded dynamically (C:\Users\??´?\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.9\dfb8707031008535048bad2b69735f46d0b6c5e5\byte-buddy-agent-1.14.9.ja)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.4</a> at 2023. 12. 18. 오후 9:21:34</p>
+</div>
+</div>
+</body>
+</html>
